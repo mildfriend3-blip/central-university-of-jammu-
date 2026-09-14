@@ -301,7 +301,7 @@ h2 {
 
 .about-card-hz:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(241, 9, 9, 0.05);
 }
 
 .card-blue {

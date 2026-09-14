@@ -218,49 +218,18 @@ h2 {
 .hero-media {
     flex: 1;
     display: flex;
-    align-items: flex-end;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .campus-photo {
-    flex: 1.5;
     width: 100%;
-    height: 300px;
+    max-width: 600px;
+    height: 380px;
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.vc-card {
-    flex: 1;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    border-top: 5px solid var(--cuj-blue);
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.vc-avatar {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 12px;
-    border: 3px solid var(--bg-gray);
-}
-
-.vc-info strong {
-    display: block;
-    color: var(--cuj-blue);
-    font-size: 1.05rem;
-}
-
-.vc-info span {
-    font-size: 0.85rem;
-    color: var(--text-gray);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* About Section Updates */
@@ -316,7 +285,7 @@ h2 {
 /* Horizontally Expanding Blocks */
 .about-horizontal-grid {
     display: flex;
-    flex-direction: column; /* Stacks horizontally wide */
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -373,7 +342,6 @@ h2 {
     text-align: justify;
     margin: 0;
 }
-
 
 /* CSE Section */
 .cse-section {
@@ -727,6 +695,10 @@ h2 {
     .hero-media {
         flex-direction: column;
         align-items: stretch;
+    }
+    
+    .campus-photo {
+        height: 250px;
     }
     
     .faculty-grid {

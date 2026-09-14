@@ -24,18 +24,21 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
+        <section id="home" class="hero-section">
+            <div class="container hero-layout">
                 <div class="hero-text">
-                    <span class="badge">Welcome to</span>
                     <h1>Central University of Jammu</h1>
                     <p class="tagline">Empowering Minds, Shaping the Future.</p>
-                    <a href="#about" class="btn-primary">Discover More</a>
                 </div>
-                <div class="hero-profile">
-                    <div class="profile-card">
-                        <img src="sir%20jain.jpg" alt="Prof. Sanjeev Jain">
-                        <div class="profile-info">
+                
+                <div class="hero-media">
+                    <!-- Rectangular University Image -->
+                    <img src="yniversity.jpg" alt="CU Jammu Campus" class="campus-photo">
+                    
+                    <!-- VC Profile Card -->
+                    <div class="vc-card">
+                        <img src="sir%20jain.jpg" alt="Prof. Sanjeev Jain" class="vc-avatar">
+                        <div class="vc-info">
                             <strong>Prof. Sanjeev Jain</strong>
                             <span>Vice Chancellor</span>
                         </div>
@@ -46,7 +49,7 @@
 
         <section id="about" class="section about-section">
             <div class="container">
-                <div class="section-header text-center">
+                <div class="section-header">
                     <h2>About the University</h2>
                     <div class="divider"></div>
                 </div>
@@ -64,32 +67,30 @@
         </section>
 
         <section id="cse" class="section cse-section">
-            <div class="container">
-                <div class="cse-layout">
-                    <div class="cse-details">
-                        <h2>Department of CSE</h2>
-                        <div class="divider align-left"></div>
-                        <p class="lead-text">Committed to delivering top-tier technical education and fostering high-end innovation in computing technologies.</p>
-                        <p>The curriculum thoroughly focuses on the fundamentals of computer programming, networking, data science, and AI. Guided by highly qualified faculty, the department emphasizes hands-on practical learning through modernized laboratories and real-world projects.</p>
-                        
-                        <h3 class="mt-4">Faculty Members</h3>
-                        <div class="faculty-grid">
-                            <div class="faculty-item"><span>Prof. Palvinder Singh Mann</span> (Professor)</div>
-                            <div class="faculty-item"><span>Dr. Neerendra Kumar</span> (Associate Professor)</div>
-                            <div class="faculty-item"><span>Dr. Arvind Selwal</span> (Assistant Professor)</div>
-                            <div class="faculty-item"><span>Dr. Deepti Malhotra</span> (Assistant Professor)</div>
-                            <div class="faculty-item"><span>Mr. Zakir Ahmad Sheikh</span> (Assistant Professor)</div>
-                            <div class="faculty-item"><span>Sh. Pankaj Choudhary</span> (Assistant Professor)</div>
-                        </div>
-                    </div>
+            <div class="container cse-layout">
+                <div class="cse-details">
+                    <h2>Department of CSE</h2>
+                    <div class="divider"></div>
+                    <p class="lead-text">Committed to delivering top-tier technical education and fostering high-end innovation in computing technologies.</p>
+                    <p>The curriculum thoroughly focuses on the fundamentals of computer programming, networking, data science, and AI. Guided by highly qualified faculty, the department emphasizes hands-on practical learning through modernized laboratories and real-world projects.</p>
                     
-                    <div class="cse-leadership">
-                        <div class="profile-card featured-card">
-                            <img src="hod.jpg" alt="Prof. Yashwant Singh">
-                            <div class="profile-info">
-                                <strong>Prof. Yashwant Singh</strong>
-                                <span>Professor & HOD, CSE</span>
-                            </div>
+                    <h3 class="faculty-heading">Faculty Members</h3>
+                    <div class="faculty-grid">
+                        <div class="faculty-item"><strong>Prof. Palvinder Singh Mann</strong><br>Professor</div>
+                        <div class="faculty-item"><strong>Dr. Neerendra Kumar</strong><br>Associate Professor</div>
+                        <div class="faculty-item"><strong>Dr. Arvind Selwal</strong><br>Assistant Professor</div>
+                        <div class="faculty-item"><strong>Dr. Deepti Malhotra</strong><br>Assistant Professor</div>
+                        <div class="faculty-item"><strong>Mr. Zakir Ahmad Sheikh</strong><br>Assistant Professor</div>
+                        <div class="faculty-item"><strong>Sh. Pankaj Choudhary</strong><br>Assistant Professor</div>
+                    </div>
+                </div>
+                
+                <div class="cse-sidebar">
+                    <div class="hod-card">
+                        <img src="hod.jpg" alt="Prof. Yashwant Singh" class="hod-avatar">
+                        <div class="hod-info">
+                            <strong>Prof. Yashwant Singh</strong>
+                            <span>Professor & HOD, CSE</span>
                         </div>
                     </div>
                 </div>
@@ -98,24 +99,24 @@
 
         <section id="contact" class="section contact-section">
             <div class="container">
-                <div class="section-header text-center">
+                <div class="section-header">
                     <h2>Get in Touch</h2>
                     <div class="divider"></div>
                 </div>
                 <div class="contact-grid">
-                    <div class="contact-widget">
-                        <h4>Department</h4>
+                    <div class="contact-box">
+                        <h4>Department Email</h4>
                         <a href="mailto:cse.dept@cujammu.ac.in">cse.dept@cujammu.ac.in</a>
                     </div>
-                    <div class="contact-widget">
-                        <h4>Registrar</h4>
+                    <div class="contact-box">
+                        <h4>College Email</h4>
                         <a href="mailto:registrar@cujammu.ac.in">registrar@cujammu.ac.in</a>
                     </div>
-                    <div class="contact-widget">
-                        <h4>Phone</h4>
+                    <div class="contact-box">
+                        <h4>Contact Number</h4>
                         <a href="tel:+9101923249658">+91 01923-249658</a>
                     </div>
-                    <div class="contact-widget">
+                    <div class="contact-box">
                         <h4>Location</h4>
                         <p>Bagla (Rahya Suchani), Samba,<br>Jammu J&K 181143</p>
                     </div>
@@ -125,7 +126,7 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container text-center">
+        <div class="container">
             <p>&copy; 2026 Central University of Jammu. All rights reserved.</p>
         </div>
     </footer>

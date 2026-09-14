@@ -44,6 +44,15 @@ a:hover {
     padding: 0 24px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Header & Navigation */
 .site-header {
     background-color: var(--cuj-blue);
@@ -132,7 +141,7 @@ h2 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px; /* Offset for fixed header */
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 
@@ -151,6 +160,17 @@ h2 {
 
 .hero-text {
     flex: 1.1;
+}
+
+.hero-main-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
 }
 
 .badge {
@@ -243,41 +263,117 @@ h2 {
     color: var(--text-gray);
 }
 
-/* About Section */
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* About Section Updates */
+.about-center-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
-.about-card {
-    background: #fff;
-    padding: 35px 30px;
-    border: 1px solid var(--border-color);
+.about-campus-img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.about-vc-display {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--cuj-blue);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.about-vc-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--bg-gray);
+}
+
+.about-vc-text strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--cuj-blue);
+    margin-bottom: 4px;
+}
+
+.about-vc-text span {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+/* Horizontally Expanding Blocks */
+.about-horizontal-grid {
+    display: flex;
+    flex-direction: column; /* Stacks horizontally wide */
+    gap: 20px;
+}
+
+.about-card-hz {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 40px;
+    border-radius: 8px;
+    border: 1px solid;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+.about-card-hz:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card-blue {
+    background-color: #e8f4fd;
+    border-color: #b3d4ff;
+}
+
+.card-white {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+}
+
+.card-gray {
+    background-color: #f4f7fa;
+    border-color: #cbd5e1;
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 3.5rem;
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.about-card h3 {
-    margin-bottom: 15px;
+.card-text {
+    flex: 1;
+}
+
+.card-text h3 {
+    margin-bottom: 8px;
     font-size: 1.4rem;
 }
 
-.about-card p {
+.card-text p {
     color: var(--text-gray);
+    font-size: 1rem;
     text-align: justify;
-    font-size: 0.95rem;
+    margin: 0;
 }
+
 
 /* CSE Section */
 .cse-section {
@@ -597,10 +693,21 @@ h2 {
         margin-top: 30px;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
+    .about-center-media {
+        flex-direction: column;
+    }
+
+    .about-campus-img {
+        width: 100%;
+        height: auto;
     }
     
+    .about-card-hz {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
     .contact-info-panel {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
